@@ -1,0 +1,1 @@
+A full-stack MERN project created to add blog posts or "memories" using react, redux, node, express, and mongoDB.
