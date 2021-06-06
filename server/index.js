@@ -14,7 +14,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use('/posts', postRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://Rinzler8806:Darktide88@cluster0.kwo9h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const CONNECTION_URL = 'mongodb+srv://Rinzler8806:Darktide88@cluster0.kwo9h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 const PORT = process.env.PORT || 5000;
 
