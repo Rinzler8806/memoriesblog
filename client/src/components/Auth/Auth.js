@@ -24,20 +24,20 @@ const Auth = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(isSignup) {
-            dispatch(signup(formData, history))
+        if (isSignup) {
+            dispatch(signup(formData, history));
         } else {
-            dispatch(signin(formData, history))
+            dispatch(signin(formData, history));
         }
     };
 
     const handleChange = (e) => {
-        setFormData({ ... formData, [e.target.name]: e.target.value });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const switchMode = () => {
         setIsSignup((prevIsSignup) => !prevIsSignup);
-        handleShowPassword(false);
+        setShowPassword(false);
     };
 
     const googleSuccess = async (res) => {
